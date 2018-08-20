@@ -16,4 +16,4 @@ if [ ! -d "/home/cloudcustodian/custodian" ]; then
 	pip install c7n
 fi
 
-exec "@$"
+exec "$@"
