@@ -14,6 +14,7 @@ if [ ! -d "/home/cloudcustodian/custodian" ]; then
 	source custodian/bin/activate
 	pip install --upgrade pip
 	pip install c7n
+	deactivate
 fi
 echo -e "\033[1;32m\nThis is Cloud Custodian\n Has git, git-bash-prompt, aws-azure-login (MFA)\033[0m\n\n"
 
