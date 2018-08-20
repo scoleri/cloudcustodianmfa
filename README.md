@@ -4,6 +4,7 @@
 
 - It's stupid huge but it works. aws-azure-login uses Chromium which is huge.
 - Centos Root
+- aws cli
 - git
 - bash git prompt
 - Cloud Custodian
