@@ -6,7 +6,7 @@ if [ ! -f "/home/cloudcustodian/.bashrc" ]; then
   cp -R /etc/skel/.[a-z]* /home/cloudcustodian
   echo -e "GIT_PROMPT_ONLY_IN_REPO=1\nsource ~/.bash-git-prompt/gitprompt.sh" >> .bashrc
   echo -e "alias aws-azure-login=\"aws-azure-login --no-sandbox\"" >> .bashrc
-  echo -e "source custodian/bin/activate"
+  echo -e "source custodian/bin/activate" >> .bashrc
 fi
 
 if [ ! -d "/home/cloudcustodian/custodian" ]; then

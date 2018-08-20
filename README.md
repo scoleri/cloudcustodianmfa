@@ -12,6 +12,9 @@ cd ~
 mkdir CloudCustodianHome
 docker run -it -v ~/CloudCustodianHome:/home/cloudcustodian scoleri/cloudcustodianmfa:latest aws-azure-login /bin/bash
 
+NOTE:  The first time you run it (new home dir - you can have as many as you want) it'll take a few seconds to set up the environment
+
+
 aws-azure-login --configure
 aws-azure-login --no-sandbox
 aws configure
