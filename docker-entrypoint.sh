@@ -6,6 +6,7 @@ if [ ! -f "/home/cloudcustodian/.bashrc" ]; then
   cp -R /etc/skel/.[a-z]* /home/cloudcustodian
   echo -e "GIT_PROMPT_ONLY_IN_REPO=1\nsource ~/.bash-git-prompt/gitprompt.sh" >> .bashrc
   echo -e "alias aws-azure-login=\"aws-azure-login --no-sandbox\"" >> .bashrc
+  echo -e "source custodian/bin/activate"
 fi
 
 if [ ! -d "/home/cloudcustodian/custodian" ]; then
@@ -15,4 +16,4 @@ if [ ! -d "/home/cloudcustodian/custodian" ]; then
 	pip install c7n
 fi
 
-exec "$@"
+exec "@$"
