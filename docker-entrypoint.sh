@@ -16,4 +16,6 @@ if [ ! -d "/home/cloudcustodian/custodian" ]; then
 	pip install c7n
 fi
 
+echo -e "\e[32mThis is Cloud Custodian\n  Has git, git-bash-prompt, aws-azure-login (MFA)"
+
 exec "$@"
