@@ -8,7 +8,9 @@
 - git
 - bash git prompt
 - Cloud Custodian
-- virtualenv, python2 and 3
+- virtualenv, python2 and 3.6
+- kubectl
+- aws-iam-authenticator
 - aws-azure-login
 
 #USAGE (mac or linux, I don't know the syntax for windows usage but it should work):
