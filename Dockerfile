@@ -7,20 +7,20 @@ RUN yum -y install epel-release
 RUN yum -y install \
   sudo \
   git \
+  jq \
   chromium \
   python2 \
-  python34 \
-  python34-pip \
+  python36 \
+  python36-pip \
   python-pip \
   python-virtualenv \
-  python34-virtualenv 
+  python36-virtualenv 
 
 RUN yum -y erase chromium
 RUN pip install npm
 RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
 RUN yum install -y yarn nodejs
 RUN npm install -g aws-azure-login --unsafe-perm
-RUN yum install -y awscli
 RUN sed -i 's/wheel	ALL=(ALL)	ALL/wheel	ALL=(ALL)	NOPASSWD\: ALL/g' /etc/sudoers
 RUN usermod -aG wheel cloudcustodian
 
@@ -29,7 +29,6 @@ RUN git clone https://github.com/magicmonty/bash-git-prompt.git .bash-git-prompt
 
 USER cloudcustodian
 WORKDIR /home/cloudcustodian
-
 
 COPY ./docker-entrypoint.sh /
 ENTRYPOINT ["/docker-entrypoint.sh"]
