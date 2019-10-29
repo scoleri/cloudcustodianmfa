@@ -10,7 +10,7 @@ if [ ! -f "/home/cloudcustodian/.bashrc" ]; then
 fi
 
 if [ ! -d "/home/cloudcustodian/custodian" ]; then
-	virtualenv --python=python36 custodian
+	virtualenv --python=python3.6 custodian
 	source custodian/bin/activate
 	pip3 install awscli --upgrade
 	pip install --upgrade pip
