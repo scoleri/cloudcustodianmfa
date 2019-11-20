@@ -1,4 +1,4 @@
-FROM centos:latest
+FROM centos:7
 RUN set -x \
         && groupadd -g 1000 cloudcustodian \
         && useradd -u 1000 -g 1000 -M cloudcustodian
