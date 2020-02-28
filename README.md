@@ -22,7 +22,7 @@ docker run -it -v ~/CloudCustodianHome:/home/cloudcustodian scoleri/cloudcustodi
 
 NOTE:  The first time you run it (new home dir - you can have as many as you want) it'll take a few seconds to set up the environment
 
-
+#NEW Login with China
 aws-azure-login --configure
 aws-azure-login --no-sandbox
 aws configure
