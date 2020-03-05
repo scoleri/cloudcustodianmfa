@@ -8,6 +8,8 @@ RUN yum -y install \
   sudo \
   git \
   jq \
+  bc \
+  vim \
   chromium \
   python2 \
   python36 \
@@ -16,6 +18,7 @@ RUN yum -y install \
   python-virtualenv \
   python36-virtualenv 
 
+RUN yum -y update
 RUN yum -y erase chromium
 RUN pip install npm
 RUN curl --silent --location https://rpm.nodesource.com/setup_8.x | bash -
