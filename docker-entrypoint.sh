@@ -14,7 +14,7 @@ if [ ! -d "/home/cloudcustodian/custodian" ]; then
 	source custodian/bin/activate
 	pip3 install awscli --upgrade
 	pip install --upgrade pip
-	pip install c7n
+	pip install c7n c7n-org
 	curl -o custodian/bin/aws-iam-authenticator https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/aws-iam-authenticator
 	chmod +x custodian/bin/aws-iam-authenticator
 	curl -o custodian/bin/kubectl https://amazon-eks.s3-us-west-2.amazonaws.com/1.11.5/2018-12-06/bin/linux/amd64/kubectl
