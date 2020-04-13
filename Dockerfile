@@ -3,7 +3,6 @@ RUN set -x \
         && groupadd -g 1000 cloudcustodian \
         && useradd -u 1000 -g 1000 -M cloudcustodian
 
-
 RUN yum -y install epel-release
 RUN yum -y install \
   sudo \
